@@ -15,12 +15,6 @@ def homepage(request):
 	html=template.render(locals())
 	return HttpResponse(html);
 	
-	# post_lists=list()
-	# for index,post in enumerate(posts):
-		# post_lists.append("行号.{}:".format(str(index))+str(post)+"<hr>") 
-		# post_lists.append("<small>"+post.body+"</small><br><br>")
-	
-	# return HttpResponse(post_lists)
 	
 def showpost(request,slug):
 	template=get_template('post.html')
